@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+</head>
+<body>
+
+</body>
+<script>
+
+</script>
+<script>
+
+//forEach,for of, for in,for区别
+let arr = [1,4,2,3,55];
+arr.b = 100;
+for(var i=0;i<arr.length;i++){
+    console.log(arr[i]);//编程式
+}
+
+
+// arr.forEach(function(item){
+//     console.log(item); //声明式
+// })
+//foreach 不支持return, 由于vue也是声明式，所以
+//for in 可以打印出数组的私有属性
+
+for(let key in arr){
+    console.log(key);   //结果是string 
+}
+
+for(let val of arr){ //支持return，并且是值of数组（不能遍历对象）val of arr
+    console.log(val);
+}
+// 排序
+let num = [1,2,3,23,5,26];
+
+let sort = num.sort(function(a,b){
+    return a-b;
+})
+
+// console.log(sort);
+
+
+
+
+</script>
+</html>
